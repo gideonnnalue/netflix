@@ -26,7 +26,7 @@ const movieModal = props => {
       <div className="container-fluid movie__modal">
         <Row>
           <Col sm="5">
-            <img src={`http://image.tmdb.org/t/p/original${poster_path}`} alt="" width="300" />
+            <img src={`http://image.tmdb.org/t/p/original${poster_path}`} alt="" />
           </Col>
           <Col>
             <div className="movie__modal--header">
