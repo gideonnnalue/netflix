@@ -1,0 +1,264 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #221f1f;
+}
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0) inset, 0 0 8px rgba(126, 239, 104, 0);
+  outline: 0 none;
+}
+
+.navigation {
+  font-weight: 400;
+}
+
+.main-nav {
+    background: linear-gradient(to bottom, #000000, #00000000);
+}
+
+.main-nav-link {
+  color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-nav-link:hover {
+  background: #e50914;
+  color: white;
+}
+
+.searchInput {
+  width: 300px;
+  height: 35px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 14px;
+  padding: 13px;
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+    background: transparent;
+    width: 400px;
+    border: 2px solid #e50914;
+}
+
+.moviePage {
+  background-color: #221f1f;
+
+}
+
+.featured_section {
+  background: linear-gradient(to top, #221f1f 0%, rgba(34, 31, 31, 0) 100%),
+    url(../escobar.jpg);
+  height: 90vh;
+  background-position: top;
+  background-size: cover;
+  padding-top: 100px;
+}
+
+.featured_section .btn {
+  background: transparent;
+  border: 2px solid rgba(245, 245, 241, 0.2);
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.featured_section .btn:hover {
+  border-color: white;
+}
+
+.featured_section .featured_btn_1 {
+  border-color: #e50914;
+}
+
+.featured_section .featured_btn_1:hover {
+  border-color: #e50914;
+  background: #e50914;
+}
+
+.featured_section p {
+    width: 50%;
+}
+
+.featured_section img {
+    width: 400px;
+}
+
+.preview__items {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-flow: row wrap;
+}
+
+.preview__items:last-child {
+  margin: 0;
+}
+
+.movie__card {
+  width: 280px;
+  height: 200px;
+  border-radius: 0;
+  border: 0;
+  background: #000000;
+}
+
+.movie__card:hover {
+    cursor: pointer;
+}
+
+.movie__card .movie__card--overlay {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all .2s ease-in;
+}
+
+.movie__card:hover .movie__card--overlay {
+  opacity: 1;
+}
+
+.movie__card .movie__card--img {
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: background-size 1s ease;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.movie__card:hover .movie__card--img {
+  background-size: 150%;
+}
+
+.movie__card .movie__card--overlay .movie__desc {
+  transform: translateY(200px);
+  transition: all .3s ease;
+}
+
+.movie__card:hover .movie__card--overlay .movie__desc {
+  transform: translate(0);
+}
+
+
+
+.movie__title {
+  font-weight: 300;
+}
+
+.movie__rating {
+  font-weight: 700;
+}
+
+
+.movie__modal {
+  position: relative;
+}
+
+.movie__modal--header {
+  line-height: 0.5rem;
+  margin-top: 30px;
+}
+
+.movie__modal--body {
+  clear: both;
+  padding-bottom: 50px;
+}
+
+
+.movie__modal--footer {
+  position: absolute;
+  bottom: 0;
+  display: block;
+}
+
+.movie__modal--footer a:link,
+.movie__modal--footer a:visited {
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.movie__modal--footer a:hover {
+  color: #e50914;
+}
+
+.movie__modal--rating {
+  float: left;
+  padding: 25px 15px;
+  border-radius: 200px;
+  background: #01D277;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  border: 2px solid #221f1f;
+}
+
+.movie__modal--head {
+  float: left;
+}
+
+.movie__modal h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+
+.movie__modal p {
+  font-size: 14px;
+  color: #383838;
+  font-weight: 400;
+}
+
+@keyframes swipeUp {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .input-class {
+    display: none;
+  }
+  .featured_section p {
+    width: 100%;
+}
+.featured_section img {
+    width: 300px;
+}
+}
