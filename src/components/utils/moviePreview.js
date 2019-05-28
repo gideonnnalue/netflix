@@ -15,7 +15,6 @@ import backImg from "../../resources/test.jpg";
 
 const moviePreview = props => {
   let { original_title, original_name, vote_average, overview, backdrop_path, release_date } = props.data;
-  console.log(props.data);
   return (
     <Card className="movie__card text-white" onClick={props.toggle}>
       <div
