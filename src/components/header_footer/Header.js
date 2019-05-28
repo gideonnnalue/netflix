@@ -35,7 +35,7 @@ class Header extends Component {
         <Navbar color=""  expand="md" className="fixed-top main-nav pt-4">
           <div className="container-fluid px-5">
           <NavbarBrand href="/">
-            <img src={Logo} alt="" width="150" />
+            <img src={Logo} alt="" className="movie__logo"/>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle}><ion-icon name="menu" size="large" style={{color: "#fff"}}></ion-icon></NavbarToggler>
           <Collapse isOpen={this.state.isOpen} navbar>

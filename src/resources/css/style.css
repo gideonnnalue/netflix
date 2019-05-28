@@ -3,7 +3,6 @@ body {
   background-color: #221f1f;
 }
 
-
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -19,7 +18,7 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
-.uneditable-input:focus {   
+.uneditable-input:focus {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0) inset, 0 0 8px rgba(126, 239, 104, 0);
   outline: 0 none;
 }
@@ -29,7 +28,11 @@ input[type="color"]:focus,
 }
 
 .main-nav {
-    background: linear-gradient(to bottom, #000000, #00000000);
+  background: linear-gradient(to bottom, #000000, #00000000);
+}
+
+.movie__logo {
+  width: 150px;
 }
 
 .main-nav-link {
@@ -57,14 +60,13 @@ input[type="color"]:focus,
 }
 
 .searchInput:focus {
-    background: transparent;
-    width: 400px;
-    border: 2px solid #e50914;
+  background: transparent;
+  width: 400px;
+  border: 2px solid #e50914;
 }
 
 .moviePage {
   background-color: #221f1f;
-
 }
 
 .featured_section {
@@ -98,11 +100,11 @@ input[type="color"]:focus,
 }
 
 .featured_section p {
-    width: 50%;
+  width: 50%;
 }
 
 .featured_section img {
-    width: 400px;
+  width: 400px;
 }
 
 .preview__items {
@@ -125,7 +127,7 @@ input[type="color"]:focus,
 }
 
 .movie__card:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .movie__card .movie__card--overlay {
@@ -161,8 +163,6 @@ input[type="color"]:focus,
   transform: translate(0);
 }
 
-
-
 .movie__title {
   font-weight: 300;
 }
@@ -170,7 +170,6 @@ input[type="color"]:focus,
 .movie__rating {
   font-weight: 700;
 }
-
 
 .movie__modal {
   position: relative;
@@ -189,7 +188,6 @@ input[type="color"]:focus,
   clear: both;
   padding-bottom: 50px;
 }
-
 
 .movie__modal--footer {
   position: absolute;
@@ -212,7 +210,7 @@ input[type="color"]:focus,
   float: left;
   padding: 25px 15px;
   border-radius: 200px;
-  background: #01D277;
+  background: #01d277;
   color: #ffffff;
   font-weight: 700;
   font-size: 20px;
@@ -224,9 +222,9 @@ input[type="color"]:focus,
 }
 
 .movie__modal h2 {
-    font-weight: 700;
-    font-size: 24px;
-    color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
 }
 
 .movie__modal p {
@@ -250,8 +248,6 @@ input[type="color"]:focus,
   }
 }
 
-
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -267,12 +263,17 @@ input[type="color"]:focus,
   }
   .featured_section p {
     width: 100%;
-}
-.featured_section img {
+  }
+  .featured_section img {
     width: 300px;
+  }
+  .movie__modal img {
+    width: 200px;
+  }
 }
-.movie__modal img {
-  width: 200px;
 
-}
+@media (max-width: 367px) {
+  .movie__logo {
+    width: 120px;
+  }
 }
