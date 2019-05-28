@@ -235,6 +235,12 @@ input[type="color"]:focus,
   font-weight: 400;
 }
 
+.movie__modal .movie__modal--close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 @keyframes swipeUp {
   0% {
     transform: translateY(200px);
