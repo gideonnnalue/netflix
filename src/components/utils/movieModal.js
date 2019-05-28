@@ -29,6 +29,7 @@ const movieModal = props => {
             <img src={`http://image.tmdb.org/t/p/original${poster_path}`} alt="" />
           </Col>
           <Col>
+          <ModalHeader toggle={this.toggle}>
             <div className="movie__modal--header">
               <div className="movie__modal--rating mr-3">{vote_average*10}<span style={{fontSize: "12px"}}>%</span></div>
               <div className="movie__modal--head mt-2">
@@ -36,6 +37,7 @@ const movieModal = props => {
                 <p>{release_date || first_air_date}</p>
               </div>
             </div>
+            </ModalHeader>
             <div className="movie__modal--body">
               <hr />
               <p>
